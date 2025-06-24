@@ -75,6 +75,9 @@ class HomeScreen extends ConsumerWidget {
                     const Gap(20),
                     ElevatedButton(
                       onPressed: () => context.push(RouteLocation.createTask),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: context.colorScheme.primary,
+                      ),
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: DisplayWhiteText(
